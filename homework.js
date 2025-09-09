@@ -6,6 +6,8 @@ const printArray = arr => {
     console.log('==========');
 }
 // TODO Homework 1 reverse array arr. NB! reverse is not a print
+
+// 1 вариант с созданием нового массива, но не подходит по условию задачи, т.к. нужно изменить исходный массив
 // const reverseArray = arr => {
 //         const newArr = [];
 //         for (let i = arr.length - 1; i >= 0; i--) {
@@ -56,6 +58,8 @@ const search = (arr, value) => {
 //     } while (flag);
 // }
 
+
+//так явно проще, но менее эффективно, т.к. всегда n*(n-1)/2 сравнений, даже если массив уже отсортирован
 const bubbleSort = (arr, comparator) => {
     const n = arr.length;
     for (let i = 0; i < n - 1; i++) {
